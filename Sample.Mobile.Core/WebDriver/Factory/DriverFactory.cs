@@ -1,5 +1,4 @@
 ﻿using System;
-using OpenQA.Selenium.Appium.iOS;
 
 namespace Sample.Mobile.Core.WebDriver
 {

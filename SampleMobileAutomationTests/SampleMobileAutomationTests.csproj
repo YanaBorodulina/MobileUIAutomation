@@ -1,0 +1,90 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+        <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.35" />
+        <PackageReference Include="SpecFlow.NUnit" Version="3.9.22" />
+        <PackageReference Include="nunit" Version="3.13.2" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+        <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PlanA.Mobile.Core\PlanA.Mobile.Core.csproj" />
+      <ProjectReference Include="..\Sample.Mobile.Core\Sample.Mobile.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Pages\LoginAndroidSelectors.cs">
+        <DependentUpon>LoginPage.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Pages\LoginIosSelectors.cs">
+        <DependentUpon>LoginPage.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\PermissionsSelectors.cs">
+        <DependentUpon>PermissionScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\LoginSelectors.cs">
+        <DependentUpon>LoginScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="CommonElements\AlertSelectors.cs">
+        <DependentUpon>Alert.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\HomeSelectors.cs">
+        <DependentUpon>HomeScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="CommonElements\InlineMessageSelectors.cs">
+        <DependentUpon>InlineMessage.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\RestoreAccountSelectors.cs">
+        <DependentUpon>RestoreAccountScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="CommonElements\BottomMenuSelectors.cs">
+        <DependentUpon>BottomMenu.cs</DependentUpon>
+      </Compile>
+      <Compile Update="CommonElements\UserGuidSelectors.cs">
+        <DependentUpon>UserGuid.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\Rooms\DialogSelectors.cs">
+        <DependentUpon>Dialog.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\Rooms\SearchRoomSelectors.cs">
+        <DependentUpon>SearchRoomScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\Rooms\YourDetailsSelectors.cs">
+        <DependentUpon>YourDetailsScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\Rooms\RoomsScreenSelectors.cs">
+        <DependentUpon>RoomsScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\Rooms\AdditionalServicesSelectors.cs">
+        <DependentUpon>AdditionalServicesScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\Rooms\SummarySelectors.cs">
+        <DependentUpon>SummaryScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\Rooms\PaymentSelectors.cs">
+        <DependentUpon>PaymentScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\Rooms\BookingConfirmationSelectors.cs">
+        <DependentUpon>BookingConfirmationScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\Rooms\SearchPackageSelectors.cs">
+        <DependentUpon>SearchPackageScreen.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Screens\Rooms\TermAndConditionsSelectors.cs">
+        <DependentUpon>TermAndConditions.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="appsettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>

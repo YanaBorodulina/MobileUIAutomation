@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
-using OpenQA.Selenium.Appium.iOS;
 using Sample.Mobile.Core.Extensions;
 using Sample.Mobile.Core.Logger;
 using Sample.Mobile.Core.WebDriver;

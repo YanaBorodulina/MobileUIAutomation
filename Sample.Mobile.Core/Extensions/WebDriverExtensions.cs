@@ -1,5 +1,4 @@
-﻿using OpenQA.Selenium.Appium;
-using OpenQA.Selenium.Appium.Interfaces;
+﻿using OpenQA.Selenium.Appium.Interfaces;
 using OpenQA.Selenium.Appium.MultiTouch;
 
 namespace Sample.Mobile.Core.Extensions

@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
-using OpenQA.Selenium.Appium.iOS;
 using OpenQA.Selenium.Support.UI;
-using Sample.Mobile.Core.WebElement;
 
 namespace Sample.Mobile.Core.Extensions
 {

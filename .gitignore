@@ -1,3 +1,7 @@
 ﻿.idea
 Sample.Mobile.Core/bin
 Sample.Mobile.Core/obj
+SampleMobileAutomationTests/bin
+SampleMobileAutomationTests/obj
+
+*.feature.cs
